@@ -1,0 +1,1 @@
+web: gunicorn pip-assistant.wsgi --log-file -
