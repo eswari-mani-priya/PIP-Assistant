@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Detect the Enter Key in a Text Input Field with jQuery</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+    $(document).on("keypress", "input", function(e){
+        if(e.which == 13){
+            var inputVal = $(this).val();
+            $("#myTextarea").append('\nMe: '+inputVal+'\n');
+            if(inputVal == 'hi'){
+                var outputVal = "Hello! How can I help you ?";
+            }
+            else if(inputVal == "Show me Python official blog ?"){
+                var outputVal = "www.python.org";
+            }
+            else{
+                var outputVal = "Sorry didn't get you";
+            }
+            $("#myInput").val('');
+            function printText(){
+                document.getElementById("myTextarea").innerHTML += '\nPIP: '+outputVal +'\n';
+            }
+            setTimeout(printText,500);
+        }
+    });
+</script>
+</head>
+<body>
+    <textarea id="myTextarea" rows="30", cols="60">Hi dude! Welcome to PIP Bot</textarea>
+    <p><strong>Note:</strong> Type something in the text input box and press enter key.</p>
+    <p><input id='myInput' type="text"></p>
+</body>
+</html>
