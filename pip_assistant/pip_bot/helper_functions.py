@@ -22,7 +22,7 @@ def get_response(text):
         response.query_result.fulfillment_text))
     res = response.query_result.fulfillment_text
     return res
-
+l
 
 
 
