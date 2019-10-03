@@ -3,18 +3,42 @@
 <head>
 <meta charset="utf-8">
 <title>Detect the Enter Key in a Text Input Field with jQuery</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+     function send_value(){
+             var form = $(this).closest("form");
+             var input = $("#myInput").val();
+             var textarea = $("#myTextarea").val();
+             $.ajax({
+             url: form.attr("data-get-input-url"),
+             method : 'POST',
+             data: {'input': input,
+                    'textarea: textarea},
+             success: function(data) {
+                $("#myTextarea").append('\nMe: '+$('#myInput').val()+'\n');
+                var outputVal = {{ output }}
+                console.log(outputVal);
+                $("#myInput").val('');
+                function printText(){
+                    document.getElementById("myTextarea").innerHTML += '\nPIP: '+outputVal +'\n';
+                }
+                setTimeout(printText,500);
+              }
+              });
+    }
+</script>
 </head>
 <body>
-    <form action="/pip/" method="post">
+    <form action="/pip/" method="POST" data-get-input-url="{% url 'get_input' %}">
         {% csrf_token %}
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript">
+
+        <!--<script type="text/javascript">
             $(document).on("keypress", "input", function(e){
                 if(e.which == 13){
                     var inputVal = $(this).val();
                     document.getElementById("myTextarea").innerHTML += '\nMe: '+inputVal+'\n');
-                    var outputVal = '{{output}}' || false;
+                    var outputVal = '{{ output|safe }}';
                     console.log(outputVal)
                     function printText(){
                         document.getElementById("myTextarea").innerHTML += '\nPIP: '+outputVal +'\n';
@@ -22,28 +46,12 @@
                     setTimeout(printText,500);
                 }
             });
-        </script>
+        </script>-->
+        <p id="output"></p>
         <textarea id="myTextarea" rows="30", cols="60", name="text-area">Hi dude! Welcome to PIP Bot</textarea>
         <p><strong>Note:</strong> Type something in the text input box and press enter key.</p>
         <input id='myInput' name="utext" placeholder="Ask Something..." type="text">
-        <!--<script>
-             function send_value(){
-
-                         $.ajax({
-                         url: '/pip/',
-                         method : 'POST',
-                         data: {quantity: $('#myInput').val()},
-                         beforeSend: function() {
-                          $("#myTextarea").append('\nMe: '+$('#myInput').val()+'\n');
-                          $("#myInput").val('');
-                         },
-                         success: function(response) {
-                            alert(response)
-
-                          }
-                          });
-            }
-        </script>-->
+        <input type="submit" value="Submit" onclick="send_value()">
     </form>
 </body>
 </html>
