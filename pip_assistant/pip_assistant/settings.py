@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pip_bot',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -55,6 +56,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'pip_assistant.urls'
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+ASGI_APPLICATION = "pip_assistant.routing.application"
 
 TEMPLATES = [
     {
