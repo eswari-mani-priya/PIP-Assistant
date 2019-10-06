@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pip_bot',
-    'channels',
+    #'channels',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +56,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'pip_assistant.urls'
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-ASGI_APPLICATION = "pip_assistant.routing.application"
+#ASGI_APPLICATION = "pip_assistant.routing.application"
 
 TEMPLATES = [
     {
@@ -124,7 +124,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+print(STATIC_ROOT)
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    STATIC_ROOT,
+)
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace("\\", "/")
 print(MEDIA_ROOT)
 MEDIA_URL = '/media/'
