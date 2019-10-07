@@ -2,6 +2,8 @@ from django.shortcuts import render, render_to_response
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from .helper_functions import get_response
+from django.utils.safestring import mark_safe
+from django.utils.html import format_html
 import json
 
 
@@ -12,6 +14,7 @@ def get_output(request):
         data = json.loads(request.body)
         message = data['message']
         chat_response = get_response(message)
+        print(type(chat_response))
         response['message'] = {'text': chat_response, 'user':False, 'chat_bot':True}
         response['status'] = 'ok'
     else:
