@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pip-assistant",
+  "private_key_id": "3ba6200d35f76b54ed414e4122b0757ab055689c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2NeBc6XGhEP6J\nfaibiAHWexHpP/GOIxlulOb42Q7GohmqHypKLXXcHpoNu/er0mw+KkTMv2j3krBK\n6zeisJULwKPFLCKnMtQDHr6miixIWOYZdXZv8aUdzhk5+JDzFmm54B4925k/uVAc\n6ob+RjJ2bTfdvcLfTSRDYYPOx0Sho78R5llqhgomL5U7bGcuiBlC1HeApGSqJ5up\neb+1U/izPXaPh/cQfRJSyEC3IVH9eTIUOxkqV5XUm8+BejdNCh/sSsUdMxw3xXxF\n/cxVH9VQbk0Jf7lD6qB9hje40liEDabFLoYJZVIQ9Ps6D5u7wdZjcJqFMaYTn4ck\ndF19vjkPAgMBAAECggEACnvixcXNesR/uMko+eX4oRl3XYcx2V6jTc211SH8Fn6+\nNkp7xEUwWl13ugw+Lb3k6ituxk8fIDDprC3eMiIHOWQN/ZV9WvHIPskL6YjaumuZ\ntbj1+xlEHwkRl4Mkp+/6s64LChPIEgwSFCUvEOiuFPVSI76RkgfzawhsgpR276E4\n1aKcOd0r8g83y5KytSMvo2dBsyAtb4nRfc7WxgR8CdNa0sxp5n657KlRb5M5d9fI\nXIQqdI2QeydbT5oC6bBqMQaXHLKO2x3xB0ZtwqGKWpwOUDVxEUoJiip1rQdKZtx/\nQ+ThAPc7IBai2z4M4VmwLHWamXmwh2d/Cn5ZRG84KQKBgQDvyANfuujRK/tyiHla\n6Xr0W75GlnzYnjefS5xQNkt8yOjHWwqDu49IDKzkuD7nUKCjPXA4uiGDXTzlgwiV\npQZKW35L++v4bdGN1SeuSzrpCNF3DtqYn1WLsvfWontE2ojlHxl3ROwDrfFEJUhW\nbecW5HlrRb62c/IxjL59g/coNwKBgQDCiPt7RwmNnrBWg02AwbQlGavnLu9Uk9uM\nji4MfTdv6WvqRRKrYXfwffDamwISqcYcskzOzl9kU4NzyjE8v2FzXhPTtYDJIhk3\nK28AiV7MBaQ36hLxUc5+T8oTgG5bN/3XEGBJQ8vGQglR3bzXYu31iYx+AW9WbLls\nIfPIouzZ6QKBgQCNxneoPL24IAdW2zbV+ENJBI3m8sfy1OoSeAR+sPvFVo28giof\nZeD8OvJnckFPSC8TFhqqj/OM1q5RDj8fLCoiASMWDmihxV0oPaZuufClJR+lA9Vg\ndKWCKlm8QOod9hEHWHIYQVpDeq+zGVBCOk1vDbx1HxH6k2fawFtJn6Od1QKBgHA5\nM9J/PYycYh/WaWyA0lqgv6GDWv/QuFQSZZBA4C1IXD/ujwGdHeL31G1YBM8db7N4\nTIT1WuR2pRu0JclkomQ6fnegemYNrLw96zBFDxHlo0G6YCkkx1noz6uGaKNo3qAl\ny1YYrUJ3MAcxQtKCOMJwEkNSspcJ68HsqEUzcC2ZAoGBAMzfalaQQHYHZLGiJUiy\nT/7rCGxdDDSlo4u0yotIiCt9gYhUu9A/U2CUyCUN+VD2L+fI2HEviqmsw1ZzfKJu\n9UgVA6vQgTQQ1aXGfUSFAhwB+5TXYCFlv1ODt4VEXoTEXJJBxAeLyW+GEdjEU7LI\n+UZz5f1ks7i6lseYql+LMcni\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-enaqwp@pip-assistant.iam.gserviceaccount.com",
+  "client_id": "103345856401385339286",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-enaqwp%40pip-assistant.iam.gserviceaccount.com"
+}
